@@ -1,0 +1,42 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+
+<app-content-page>
+  <h1 title>Series Más populares</h1>
+
+  <div slider class="slider">
+    <div class="slide-track">
+      <app-card-serie *ngFor="let serie of seriesFirstPage" [serie]="serie"></app-card-serie>
+    </div>
+  </div>
+  <h1 >Series Más populares</h1>
+
+  <div class="slider">
+    <div class="slide-track">
+      <app-card-serie *ngFor="let serie of seriesSecondPage" [serie]="serie"></app-card-serie>
+    </div>
+  </div>
+  <h1 >Series Más populares</h1>
+
+  <div class="slider">
+    <div class="slide-track">
+      <app-card-serie *ngFor="let serie of seriesThirdPage" [serie]="serie"></app-card-serie>
+    </div>
+  </div>
+  <h1 >Series Más populares</h1>
+
+  <div class="slider">
+    <div class="slide-track">
+      <app-card-serie *ngFor="let serie of seriesFourthPage" [serie]="serie"></app-card-serie>
+    </div>
+  </div>
+ 
+</app-content-page>
+
+<div class="logo">
+  <img
+    src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Netflix.png"
+    alt="logo"
+    width="160"
+  />
+</div>

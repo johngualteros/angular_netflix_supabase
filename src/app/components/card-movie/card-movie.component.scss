@@ -1,0 +1,31 @@
+@import "src/styles.scss";
+
+.movie {
+  max-width: 300px;
+  min-width: 300px;
+  height: 100%;
+  min-height: 250px;
+  margin: 0 10px;
+  background-color: $black-light;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  transition: all 0.3s ease-in-out;
+  color: $white;
+  font-weight: bold;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  h3 {
+    width: 100%;
+    background: $glass;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

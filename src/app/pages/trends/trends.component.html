@@ -1,0 +1,45 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+
+<app-content-page>
+  <h2 title>Peliculas Mejor Valoradas</h2>
+
+  <div class="slider">
+    <div class="slide-track">
+      <app-card-movie *ngFor="let movie of moviesTrendFirstPage" [movie]="movie"></app-card-movie>
+    </div>
+  </div>
+
+  <h2>Peliculas Mejor Valoradas</h2>
+
+  <div class="slider">
+    <div class="slide-track">
+      <app-card-movie *ngFor="let movie of moviesTrendSecondPage" [movie]="movie"></app-card-movie>
+    </div>
+  </div>
+
+  <h2>Peliculas Mejor Valoradas</h2>
+
+  <div class="slider">
+    <div class="slide-track">
+      <app-card-movie *ngFor="let movie of moviesTrendThirdPage" [movie]="movie"></app-card-movie>
+    </div>
+  </div>
+
+  <h2>Peliculas Mejor Valoradas</h2>
+
+  <div class="slider">
+    <div class="slide-track">
+      <app-card-movie *ngFor="let movie of moviesTrendFourthPage" [movie]="movie"></app-card-movie>
+    </div>
+  </div>
+ 
+</app-content-page>
+
+<div class="logo">
+  <img
+    src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Netflix.png"
+    alt="logo"
+    width="160"
+  />
+</div>

@@ -1,0 +1,44 @@
+$red: #e50914;
+$white: #fff;
+$black: rgb(12, 12, 12);
+$black-light: rgb(20, 20, 20);
+$grey: #333333;
+$blue: #032d59;
+$glass: rgba(0, 0, 0, 0.7);
+$orange: #a46115;
+$grey-light: #6b6b6b;
+
+@mixin btn($background, $color, $radius, $bold, $size){
+    background-color: $background;
+    color: $color;
+    border-radius: $radius;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    width: 100%;
+    transition: all .3s ease;
+    font-size: $size;
+
+    @if $bold == true{
+        font-weight: bold;
+    }
+
+    &:disabled{
+        opacity: .5;
+    }
+}
+
+:export{
+    red: $red;
+    white: $white;
+    black: $black;
+    grey: $grey;
+    blue: $blue;
+    glass: $glass;
+    orange: $orange;
+    grey-light: $grey-light;
+    black-light: $black-light;
+
+    btn: btn;  
+}

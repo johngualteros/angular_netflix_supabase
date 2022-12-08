@@ -1,0 +1,22 @@
+<div class="container">
+  <a [routerLink]="['/home']"
+    ><i class="bi bi-house-door"></i>
+    <app-target class="target"><p title>Inicio</p></app-target></a
+  >
+  <a [routerLink]="['/movies']"
+    ><i class="bi bi-film"></i
+    ><app-target class="target"><p title>Peliculas</p></app-target></a
+  >
+  <a [routerLink]="['/series']"
+    ><i class="bi bi-tv"></i
+    ><app-target class="target"><p title>Series</p></app-target></a
+  >
+  <a [routerLink]="['/trends']"
+    ><i class="bi bi-graph-up-arrow"></i
+    ><app-target class="target"><p title>Tendencias</p></app-target></a
+  >
+  <a (click)="signOut()"
+    ><i class="bi bi-box-arrow-left"></i
+    ><app-target class="target"><p title>Cerrar sesión</p></app-target></a
+  >
+</div>

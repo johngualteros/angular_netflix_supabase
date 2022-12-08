@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="card">
+    <h2>Busca tu Pelicula favorita o Serie favorita</h2>
+    <div class="container_input">
+      <input
+        type="text"
+        #movieSearchInput
+        placeholder="buscar pelicula/serie"
+        autocomplete="off"
+      />
+      <div class="keys">
+        <div class="esc__key">Esc</div>
+      </div>
+    </div>
+
+    <!-- List of Results -->
+
+    <div class="results">
+      <div *ngIf="movies.length > 0; else empty">
+        <app-card-movie-small
+          *ngFor="let movie of movies"
+          [movie]="movie"
+        ></app-card-movie-small>
+      </div>
+      <ng-template #empty class="empty">
+        <h5>no hay resultados</h5>
+      </ng-template>
+    </div>
+  </div>
+</div>

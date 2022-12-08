@@ -1,0 +1,20 @@
+@import "src/styles.scss";
+
+.container{
+    width: 100%;
+    padding: 10px;
+    background-color: $black-light;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    place-items: center;
+    cursor: pointer;
+
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+}

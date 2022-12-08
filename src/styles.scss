@@ -1,1 +1,86 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "src/app/global/scss/global.scss";
+
+@import "node_modules/angular-notifier/styles";
+
+$animationSpeed: 60s;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $black;
+  color: $white;
+}
+
+:export {
+  @import "src/app/global/scss/global.scss";
+}
+
+.slider {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  margin: 10px 0;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    background: rgb(12, 12, 12);
+    background: linear-gradient(
+      270deg,
+      rgba(12, 12, 12, 1) 0%,
+      rgba(12, 12, 12, 1) 70%,
+      rgba(12, 12, 12, 0.9) 100%
+    );
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 100%;
+    background: rgb(12, 12, 12);
+    background: linear-gradient(
+      90deg,
+      rgba(12, 12, 12, 1) 0%,
+      rgba(12, 12, 12, 1) 70%,
+      rgba(12, 12, 12, 0.9) 100%
+    );
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  
+}
+
+.slide-track {
+  animation: scroll $animationSpeed linear infinite;
+  display: flex;
+  align-items: center;
+  width: calc(250px * 20);
+}
+// Animation
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 20));
+  }
+}

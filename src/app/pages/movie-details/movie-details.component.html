@@ -1,0 +1,29 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+
+<app-content-page>
+    
+    <div class="container" *ngIf="movie">
+        <img src="http://image.tmdb.org/t/p/w500{{movie.poster_path}}" [alt]="movie.title">
+
+        <div class="info__movie">
+            <h1>{{ movie.title }}</h1>
+            <p>{{ movie.overview }}</p>
+
+        
+            <div class="genres">
+                <p *ngFor="let genre of movie.genres">
+                    <span>{{genre.name}}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</app-content-page>
+
+<div class="logo">
+  <img
+    src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Netflix.png"
+    alt="logo"
+    width="160"
+  />
+</div>

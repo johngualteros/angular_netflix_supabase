@@ -1,0 +1,44 @@
+<app-header></app-header>
+<app-sidebar></app-sidebar>
+
+<app-content-page>
+
+    <div home class="home">
+        <h1>Bienvenido a netflix</h1>
+        <p>Disfruta de las mejores peliculas y series</p>
+    </div>
+
+
+  <h2 title>Peliculas Más populares</h2>
+
+  <div class="slider">
+    <div class="slide-track">
+      <app-card-movie *ngFor="let movie of moviesPopular" [movie]="movie"></app-card-movie>
+    </div>
+  </div>
+
+  <h2>Peliculas Mejor Valoradas</h2>
+
+  <div class="slider">
+    <div class="slide-track">
+      <app-card-movie *ngFor="let movie of moviesTopRating" [movie]="movie"></app-card-movie>
+    </div>
+  </div>
+
+  <h2>Series Más populares</h2>
+
+  <div class="slider">
+    <div class="slide-track">
+      <app-card-serie *ngFor="let serie of seriesPopular" [serie]="serie"></app-card-serie>
+    </div>
+  </div>
+ 
+</app-content-page>
+
+<div class="logo">
+  <img
+    src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Netflix.png"
+    alt="logo"
+    width="160"
+  />
+</div>

@@ -1,5 +1,24 @@
 # AngularNetflixSupabase
+### clone netflix with supabase and angular magic link cookies and more
 
+```angular2html
+npm install
+```
+
+```angular2html
+ng serve
+```
+
+![](./src/assets/netflix_login.png)
+![](./src/assets/netflix_login_2.png)
+![](./src/assets/netflix_login_3.png)
+![](./src/assets/netflix_1.png)
+![](./src/assets/netflix_2.png)
+![](./src/assets/netflix_3.png)
+![](./src/assets/netflix_4.png)
+![](./src/assets/netflix_5.png)
+![](./src/assets/netflix_6.png)
+![](./src/assets/netflix_7.png)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
 ## Development server

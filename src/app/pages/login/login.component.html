@@ -1,0 +1,46 @@
+<div class="container">
+  <header>
+    <img
+      src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Netflix.png"
+      alt="Logo"
+      width="160"
+    />
+  </header>
+
+  <div class="container__login">
+    <h2>Inicia sesión</h2>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <div class="form-control">
+        <input id="email" type="email" formControlName="email" autocomplete="off"/>
+        <label
+          for="email"
+          [ngClass]="loginForm.get('email')?.valid ? 'label__fixed' : ''"
+          >email</label
+        >
+        <div
+          class="error"
+          *ngIf="
+            loginForm.get('email')?.invalid &&
+            (loginForm.get('email')?.dirty || loginForm.get('email')?.touched)
+          "
+        >
+          <p *ngIf="loginForm.get('email')?.errors?.['required']">
+            El email es requerido
+          </p>
+          <p *ngIf="loginForm.get('email')?.errors?.['email']">
+            El email no es válido
+          </p>
+        </div>
+      </div>
+
+      <button type="submit" class="btn" [disabled]="!loginForm.valid || loading">
+        {{ loading ? 'Loading' : 'Send magic link' }}
+      </button>
+    </form>
+
+    <p class="info__firsttime">¿Primera vez en Netflix?<a>Suscríbete ahora.</a></p>
+
+    <p class="info">Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.<a> Más info.</a></p>
+  </div>
+</div>

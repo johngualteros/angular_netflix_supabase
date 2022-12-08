@@ -1,0 +1,53 @@
+@import 'src/styles.scss';
+
+.container{
+    width: 80px;
+    height: 100vh;
+    position: fixed;
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    left: 0;
+    color: $white;
+    z-index: 1000;
+
+    a{
+        text-decoration: none;
+        color: $grey-light;
+        margin: 15px 0;
+        font-size: 24px;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+
+        .target{
+            position: absolute;
+            bottom: 0px;
+            right: -100px;
+            display: none;
+            transition: all 0.3s ease-in-out;
+        }
+        // https://github.com/johngualteros/Project-springboot-disquera
+
+        &:hover{
+            color: $white;
+            transition: all 0.3s ease-in-out;
+
+            .target{
+                display: block;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        i{
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                transition: all 0.3s ease-in-out;
+                border-bottom: 2px solid $red;
+            }
+        }
+    }
+}

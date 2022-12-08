@@ -1,0 +1,12 @@
+@import "src/styles.scss";
+
+.container {
+  position: absolute;
+  width: calc(100% - 80px);
+  height: calc(100% - 60px);
+  padding: 40px;
+  top: 60px;
+  left: 80px;
+
+  
+}

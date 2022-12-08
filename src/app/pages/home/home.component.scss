@@ -1,0 +1,24 @@
+@import "src/styles.scss";
+
+.logo {
+  width: auto;
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  z-index: 2000;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: $red;
+    text-align: center;
+    margin-top: 20px;
+}
+p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $white;
+    text-align: center;
+    margin: 10px 0;
+}

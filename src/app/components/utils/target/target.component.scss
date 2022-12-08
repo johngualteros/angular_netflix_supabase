@@ -1,0 +1,11 @@
+@import "src/styles.scss";
+
+.container{
+    padding: 5px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: $black-light;
+    color: $white;
+    font-size: 14px;
+    text-align: center;
+}

@@ -1,0 +1,51 @@
+@import "src/styles.scss";
+
+.logo {
+  width: auto;
+  position: fixed;
+  bottom: 0;
+  right: 30px;
+  z-index: 2000;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 40% auto;
+    grid-gap: 20px;
+    place-items: center;
+    
+    img{
+        max-width: 50%;
+        max-height: 500px;
+    }
+
+    .info__movie{
+        h1{
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: $grey-light;
+            width: 50%;
+        }
+
+        .genres{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            max-width: 50%;
+        }
+        span{
+            background-color: $black-light;
+            color: $white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+}
